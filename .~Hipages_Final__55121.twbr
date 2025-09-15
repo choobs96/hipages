@@ -18,7 +18,7 @@
     <WindowsPersistSimpleIdentifiers />
     <WorksheetBackgroundTransparency />
   </document-format-change-manifest>
-  <repository-location id='Hipages_Final' path='/workbooks' revision='1.1' />
+  <repository-location id='Hipages_Final' path='/workbooks' revision='1.3' />
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
@@ -237,7 +237,7 @@
       <column-instance column='[Calculation_4490370357121585153]' derivation='User' name='[usr:Calculation_4490370357121585153:qk]' pivot='key' type='quantitative' />
       <column-instance column='[Calculation_6663709020627599362]' derivation='User' name='[usr:Calculation_6663709020627599362:qk]' pivot='key' type='quantitative' />
       <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
-        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/tableau-temp/#TableauTemp_165c67m0eere421cb255f1g15iqg.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/15/2025 12:36:24 PM' username='tableau_internal_user'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/tableau-temp/#TableauTemp_165c67m0eere421cb255f1g15iqg.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
           <relation name='Extract' table='[Extract].[Extract]' type='table' />
           <metadata-records>
             <metadata-record class='column'>
@@ -252,7 +252,6 @@
               <aggregation>Year</aggregation>
               <approx-count>3868</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[jobs_C315169BFB69458D8A6AB782F7F2E602]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>latitude</remote-name>
@@ -266,7 +265,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>3754</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[jobs_C315169BFB69458D8A6AB782F7F2E602]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>longitude</remote-name>
@@ -280,7 +278,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>3670</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[jobs_C315169BFB69458D8A6AB782F7F2E602]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>category</remote-name>
@@ -294,7 +291,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>9</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[jobs_C315169BFB69458D8A6AB782F7F2E602]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>number_of_tradies</remote-name>
@@ -308,7 +304,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>27</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[jobs_C315169BFB69458D8A6AB782F7F2E602]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>estimated_size</remote-name>
@@ -323,7 +318,6 @@
               <approx-count>2</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RMY_S2' />
-              <object-id>[jobs_C315169BFB69458D8A6AB782F7F2E602]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>number_of_impressions</remote-name>
@@ -337,7 +331,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>2044</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[jobs_C315169BFB69458D8A6AB782F7F2E602]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>accepted</remote-name>
@@ -351,7 +344,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>2</approx-count>
               <contains-null>true</contains-null>
-              <object-id>[jobs_C315169BFB69458D8A6AB782F7F2E602]</object-id>
             </metadata-record>
           </metadata-records>
         </connection>
@@ -1650,7 +1642,7 @@
             <zone h='4183' id='3' type-v2='title' w='98910' x='545' y='1014' />
             <zone h='12801' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98910' x='545' y='5197' />
             <zone h='80988' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98910' x='545' y='17998'>
-              <flipboard active-id='18' nav-type='caption' show-nav-arrows='true'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
                 <story-points>
                   <story-point caption='Data Preparation' captured-sheet='' id='10' />
                   <story-point caption='Region' captured-sheet='Map View' id='1'>
@@ -1698,9 +1690,9 @@
             <format attr='margin' value='8' />
           </zone-style>
         </zone>
-        <zone flipboard-zone-id='5' forceUpdate='true' h='13367' hidden='true' id='6' story-point-id='1' type-v2='text' w='33288' x='48332' y='22320'>
+        <zone flipboard-zone-id='5' forceUpdate='true' h='13367' id='6' story-point-id='1' type-v2='text' w='33288' x='48332' y='22320'>
           <formatted-text>
-            <run fontalignment='0' fontcolor='#000000' fontname='Benton Sans Book'>Based on Latitude and Longtitude, we can see 3 Main Clusters which are Broome - Rural (WA), Sydney - Urban (NSW) and Melbourne - Urban (VIC)</run>
+            <run fontalignment='0' fontcolor='#000000' fontname='Benton Sans Book'>Based on Latitude and Longtitude, we can see 3 Main Clusters which are Broome - Remote (WA), Sydney - Urban (NSW) and Melbourne - Urban (VIC)</run>
           </formatted-text>
         </zone>
         <zone flipboard-zone-id='5' forceUpdate='true' h='13433' hidden='true' id='7' story-point-id='2' type-v2='text' w='25590' x='61314' y='26953'>
@@ -1713,7 +1705,7 @@
             <run>Jobs for Small and Medium are evenly distributed across region ~50%</run>
           </formatted-text>
         </zone>
-        <zone flipboard-zone-id='5' forceUpdate='true' h='11728' hidden='true' id='11' story-point-id='6' type-v2='text' w='25596' x='57522' y='29130'>
+        <zone flipboard-zone-id='5' forceUpdate='true' h='12548' hidden='true' id='11' story-point-id='6' type-v2='text' w='25596' x='57522' y='29151'>
           <formatted-text>
             <run>Similar distribution by Hour by Region. Increase from morning till noon and decrease towards evening/night</run>
           </formatted-text>
@@ -1757,9 +1749,9 @@ Others (1,2,8,9) are relatively lower</run>
             <run fontalignment='0' fontsize='16'><![CDATA[Overall - Impression of NA and <0 were excluded in Tableau]]></run>
           </formatted-text>
         </zone>
-        <zone flipboard-zone-id='5' h='13493' hidden='true' id='16' story-point-id='11' type-v2='text' w='25936' x='54731' y='26356'>
+        <zone flipboard-zone-id='5' forceUpdate='true' h='13435' hidden='true' id='16' story-point-id='11' type-v2='text' w='25936' x='54799' y='36755'>
           <formatted-text>
-            <run fontalignment='0'>Despite Rural (WA) it has a relative higher acceptence rate vs Urban (NSW &amp; VIC)</run>
+            <run fontalignment='0'>Despite Remote area (WA) has a relatively higher acceptence rate vs Urban (NSW &amp; VIC)</run>
           </formatted-text>
         </zone>
         <zone flipboard-zone-id='5' h='8604' hidden='true' id='17' story-point-id='12' type-v2='text' w='30056' x='51954' y='24144'>
@@ -1800,7 +1792,7 @@ a) Prediction model
 b) Feature importance &amp; Correlation</run>
           </formatted-text>
         </zone>
-        <zone flipboard-zone-id='5' forceUpdate='true' h='71610' id='23' story-point-id='18' type-v2='text' w='33764' x='57182' y='22560'>
+        <zone flipboard-zone-id='5' forceUpdate='true' h='71610' hidden='true' id='23' story-point-id='18' type-v2='text' w='33764' x='57182' y='22560'>
           <formatted-text>
             <run bold='true' underline='true'>Enhancements</run>
             <run>
@@ -1808,29 +1800,26 @@ b) Feature importance &amp; Correlation</run>
 - Advance modeling such as XGBoost, Gradient boosting or other advanced methods
 -Deploying live prediction model into Tableau
 - Adding more data points such as mapped postal code, area, suburb, distance from City, Job quotes &amp; prices, Job type etc.
-- Monitoring dashboard to monitor live data
+- Integrating dashboard with live/T-1 data to monitor performance
 
 -</run>
           </formatted-text>
         </zone>
-        <zone flipboard-zone-id='5' h='49937' id='24' story-point-id='18' type-v2='text' w='33288' x='17155' y='22560'>
+        <zone flipboard-zone-id='5' forceUpdate='true' h='71610' hidden='true' id='24' story-point-id='18' type-v2='text' w='50442' x='5106' y='22560'>
           <formatted-text>
             <run bold='true' underline='true'>Suggestions</run>
-            <run>Æ&#10;</run>
-            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Rural Expansion Campaign</run>
-            <run fontcolor='#000000' fontname='Benton Sans Book'>: Target WA regions like Broome with tailored marketing, highlighting the 25-37% acceptance edge over urban NSW/VIC, and offer discounted subscription tiers for tradies to access medium Category 3 jobs (39.4% acceptance), aiming for 10-15% rural job volume growth to attract new subscribers.</run>
+            <run fontalignment='0'>Æ&#10;</run>
+            <run bold='true' fontalignment='0' fontcolor='#000000' fontname='Benton Sans Book'>Remote Expansion Campaign</run>
+            <run fontalignment='0' fontcolor='#000000' fontname='Benton Sans Book'>: Market to WA areas like Broome, showcasing 25-37% higher acceptance than NSW/VIC, Customer acquisition Campaigns to boost remote job volume by 10-15%.</run>
             <run fontalignment='0'>Æ&#10;</run>
             <run bold='true' fontalignment='0' fontcolor='#000000' fontname='Benton Sans Book'>Timing Optimization</run>
-            <run fontalignment='0' fontcolor='#000000' fontname='Benton Sans Book'>: Introduce a scheduling feature for customers to post jobs between 13:00-20:00, with mid-week A/B tests (e.g., Thursday 32.9% acceptance), and send tradie app notifications for afternoon slots to boost acceptance 2-3x, encouraging active subscription use.</run>
-            <run fontalignment='0'>Æ&#10;</run>
-            <run bold='true' fontalignment='0' fontcolor='#000000' fontname='Benton Sans Book'>Tradie Targeting and Subscription Enhancements</run>
-            <run fontalignment='0' fontcolor='#000000' fontname='Benton Sans Book'>: Prioritize jobs with &gt;5000 tradies, especially in rural areas, via automated lead matching in the platform, and launch a premium subscription tier with exclusive access to high-tradie jobs, reducing churn by 10% and increasing lead conversion rates.</run>
+            <run fontalignment='0' fontcolor='#000000' fontname='Benton Sans Book'>: Add a Miday job posting scheduler for customers (Suggest best time for post feature), and send tradie app alerts for afternoons to increase acceptance and encourage subscription use.</run>
             <run fontalignment='0'>Æ&#10;</run>
             <run bold='true' fontalignment='0' fontcolor='#000000' fontname='Benton Sans Book'>Job Type Segmentation</run>
-            <run fontalignment='0' fontcolor='#000000' fontname='Benton Sans Book'>: Promote medium-sized jobs (nearly 2x small acceptance) and Category 3 (39.4%) through subscription perks like priority job alerts, while bundling low-acceptance categories (e.g., 5 at 18.9%) with high ones, incentivizing tradies to upgrade plans for better leads.</run>
+            <run fontalignment='0' fontcolor='#000000' fontname='Benton Sans Book'>: Highlight medium jobs (2x small acceptance) and Category 3 (39.4%) with priority alerts, bundling low-acceptance categories (e.g., 5 at 18.9%) to push tradies toward upgraded plans.</run>
             <run fontalignment='0'>Æ&#10;</run>
             <run bold='true' fontalignment='0' fontcolor='#000000' fontname='Benton Sans Book'>Predictive Tools Rollout</run>
-            <run fontalignment='0' fontcolor='#000000' fontname='Benton Sans Book'>: Embed Random Forest predictions in the tradie dashboard to highlight high-probability jobs (e.g., WA medium at 45.7%), offering a subscription add-on for real-time insights and capping urban impressions at 2000 to maintain lead quality, targeting 40%+ acceptance to justify premium pricing.</run>
+            <run fontalignment='0' fontcolor='#000000' fontname='Benton Sans Book'>: Add Random Forest predictions to tradie dashboards for high-probability jobs (e.g., WA medium at 45.7%), offer a real-time insight add-on.</run>
           </formatted-text>
         </zone>
       </zones>
@@ -1840,7 +1829,7 @@ b) Feature importance &amp; Correlation</run>
   <windows source-height='30'>
     <window class='dashboard' maximized='true' name='Data Exploration' tab-color='#17927d'>
       <viewpoints />
-      <active id='24' />
+      <active id='-1' />
       <simple-id uuid='{9E7B0B14-C217-4A54-B3F6-6043FC2BB7E4}' />
     </window>
     <window class='worksheet' hidden='true' name='Acceptance By Day of Week' tab-color='#4f779a'>

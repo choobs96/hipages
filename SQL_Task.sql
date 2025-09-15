@@ -1,22 +1,24 @@
 -- QUESTION 1 - The names and the number of messages sent by each user
 SELECT
-  u.UserID,
+  -- u.UserID,
   u.Name,
   COUNT(DISTINCT m.MessageID) AS message_count
 FROM Users u
 LEFT JOIN Messages m
   ON m.UserIDSender = u.UserID
-GROUP BY u.UserID, u.Name
+GROUP BY u.Name
+-- u.UserID, 
 ORDER BY message_count DESC;
 
 
 -- QUESTION 2 - The total number of messages sent stratified by weekday
 SELECT
   DAYOFWEEK(m.DateSent) AS weekday_ord,  -- 1=Sun .. 7=Sat
-  DAYNAME(m.DateSent) AS weekday_name,
-  COUNT(DISTINCT MessageID) AS total_messages
+  DAYNAME(m.DateSent)   AS weekday_name,
+  COUNT(*)              AS total_messages
 FROM Messages m
 GROUP BY weekday_ord, weekday_name
+HAVING weekday_ord NOT IN (1,7) -- if weekday only
 ORDER BY weekday_ord;
 
 -- QUESTION 3 -  The most recent message from each thread that has no response yet
