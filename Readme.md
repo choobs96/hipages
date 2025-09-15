@@ -1,6 +1,6 @@
 # Hipages Data Project
 
-This repository contains SQL, exploratory analysis, and visualization files for the Hipages data task.
+This repository contains SQL, exploratory analysis, and visualization files for the Hipages task.
 
 ## Contents
 
@@ -17,26 +17,15 @@ This repository contains SQL, exploratory analysis, and visualization files for 
 ## Usage
 
 1. **SQL**  
-   Open `SQL_Task.sql` in any SQL editor (BigQuery, MySQL, or similar). Run queries step-by-step to reproduce the data preparation.
+   Open `SQL_Task.sql` in any SQL editor. mySQL was used in this sql.
 
 2. **EDA Notebook**  
-   - Requires Python 3.  
-   - Install dependencies:  
-     ```bash
-     pip install pandas numpy matplotlib seaborn jupyter
-     ```  
-   - Launch notebook:  
-     ```bash
-     jupyter notebook EDA.ipynb
-     ```
+    EDA Notebook covers initial data exploration, prediction model and correlation checks.
 
 3. **Tableau**  
    - Open `Hipages_Final.twbx` in Tableau Desktop.  
    - Contains interactive charts/dashboards built on top of the processed dataset.
-
-## Notes
-- The `.twbr` file is a temporary Tableau backup and not required.
-- Excel file (`jobs.xlsx`) contains supporting raw data for analysis.
+   - Tableau Public link: https://public.tableau.com/views/Hipages_Final/DataExploration?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
 ---
 
